@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background: linear-gradient(45deg, #383535, #5a4843, #3a393a, #3c3c3d);
+    background-size: 300% 300%;
+    animation: backgroundAnimation 10s infinite;
+  }
+  
+  @keyframes backgroundAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  #stars-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .star {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
+    transition: all 0.3s ease;
+    cursor:progress;
+  }
+  
+  .star.glow {
+    box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 0, 0, 0.8);
+  }
+  
+  .star.color-1.glow {
+    box-shadow: 0 0 15px 5px rgba(255, 0, 0, 0.8);
+  }
+  
+  .star.color-2.glow {
+    box-shadow: 0 0 15px 5px rgba(0, 255, 0, 0.8);
+  }
+  
+  .star.color-3.glow {
+    box-shadow: 0 0 15px 5px rgba(0, 0, 255, 0.8);
+  }
+  
